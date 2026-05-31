@@ -1,0 +1,15 @@
+tasks = []
+
+def add_task(task):
+    tasks.append(task)
+
+def show_tasks():
+    print("To-Do List:")
+    for index, task in enumerate(tasks, start=1):
+        print(f"{index}. {task}")
+
+add_task("Learn Python")
+add_task("Build a project")
+add_task("Push to GitHub")
+
+show_tasks()
